@@ -71,7 +71,7 @@ gcc <YOUR-FILE>.c -L. -lib<LIBRARY-NAME> -o <OUT-NAME>
 ### Compile without a static library for _printf
 Make sure the _printf directory is in the same directory as your `YOUR-FILE.c` file and then run the following command:
 ```
-gcc -Wall -Werror -Wextra -pedantic -I $PWD/printf prinft/*.c <YOUR-FILE>.c
+gcc -Wall -Werror -Wextra -pedantic -I $PWD/printf printf/*.c <YOUR-FILE>.c
 ```
 The `-I` flag allows you to include the directory of the header file `holberton.h`. `$PWD/printf` takes the absolute path of the _print directory while `printf/*.c` compiles all your `.c` files in _printf
 
